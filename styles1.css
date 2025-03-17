@@ -1,0 +1,109 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+
+img {
+    display: block;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 10px 30px 20px;
+}
+
+.profile-image {
+    background-image: url("./images/cat-codespace.png");
+    background-size: cover;
+    border: 7px solid teal;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+
+}
+
+#profile-text {
+    display: grid;
+    grid-template-columns: minmax(500px auto);
+    grid-template-rows: 50px auto auto;
+    width: 500px;
+    text-align: left;
+    margin-left: 10px;
+    justify-content: start;
+}
+
+.profile-user-settings {
+    display: flex;
+    align-content: center;
+}
+
+.profile-user-name {
+    font-weight: 100;
+    margin-right: 20px;
+}
+
+#buttons {
+    
+}
+
+#btn-profile-edit-btn {
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #fafafa;
+
+}
+
+#btn-profile-settings-btn {
+    height: 30px;
+    border: 0px;
+    background-color: #fafafa;
+}
+
+.profile-stats {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.profile-stat-count {
+    font-weight: bold;
+}
+
+.profile-real-name {
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-image {
+    width: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
